@@ -16,11 +16,11 @@ class TestParser(unittest.TestCase):
             parser.getTemperature("what", "it")
 
     def test_size_1(self):
-        s = parser.getTemperature(parser.name[0], parser.time[0])
+        s = parser.getTemperature(parser.towns[parser.name[0]], parser.time[0])
         self.assertEqual(len(s), 1)
 
     def test_size_2(self):
-        s = parser.getTemperature(parser.name[1], parser.time[1])
+        s = parser.getTemperature(parser.towns[parser.name[1]], parser.time[1])
         self.assertEqual(len(s), 24)
 
     def test_name(self):
