@@ -1,7 +1,7 @@
 import telebot
 import parser
 import copy
-bot = telebot.TeleBot('5305212428:AAGoVFbIVHhGJOOZb68G0tkMMaD1IZjtWKg')
+bot = telebot.TeleBot('secret') #put key here
 
 name = copy.deepcopy(parser.name[0])
 time = copy.deepcopy(parser.time[0])
